@@ -40,7 +40,7 @@ while True:
             sen='a'
             sen=sen.encode()
             ser.write(sen)
-        if (line=="Tejas-pxat-uboot>"):
+        if (line=="xxxxxxx-xxxxx>"):
             print(" got the  message")
             sen='run diag\r'
             print (sen)
@@ -52,7 +52,7 @@ while True:
             e=1
         if (line==">>") and e==1:
             e=0
-            sen='initoss\r'
+            sen='xxxxxxx\r'
             sen=sen.encode()
             #print (sen)
             ser.write(sen)
@@ -60,11 +60,11 @@ while True:
             print("*******CARD TEST FAILED****")
             ser.close()
             exit()
-        if (line=="InitializeOSS"):
+        if (line=="xxxxxxxxxxxxxxxxx"):
             f=1
         if (line=="SUCCESS") and f==1:
             f=0
-            print("INITOSS PASSED")
+            print("xxxxxx PASSED")
             sen='menu\r'
             print (sen)
             sen=sen.encode()
